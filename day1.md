@@ -128,8 +128,14 @@ When you have several apps which depend on each other, sometimes we tend to comm
 ## 6. Julien Bouquillon - Using AngularJS and Phonegap to build hybrid mobile applications
 
 - Dicusses [Cordova](http://cordova.apache.org/) architecture, the OpenSource part of Phonegap.
+- The web platform is the only one that can adress the multiples devices/OS with a single codebase
 - Mentions http://ngcordova.com/, will demonstrate that using the [Contacts API](http://ngcordova.com/docs/#Contacts).
 - Showing how to load certain angular modules only when on Desktop or Mobile for example using a simple condition (!window.cordova)
+- Example code of mocking cordova calls for desktop browsers or unit test
+
+Slides : http://revolunet.github.io/ngeurope-angular-cordova
+
+Demo : http://revolunet.github.io/angular-ngcordova-demo
 
 [Demo time]
 
@@ -212,10 +218,10 @@ Feels bad right ?
 But let's be honest.. Does it slow down your app ? Sloppiness ? Insecure ?
 
 Julie states:
-> "the impact is minimal". Work gets because deferred and your code is there anyway.
+> "the impact is minimal". Workload gets deferred and in terms of security: your frontend code is there anyway.
 
 __Coming up next in Protractor__
-- Debugging improvments
+- Debugging improvements
 - Latency profiling
 - Webdriver Proxy - SyncDriver
 - More advanced tutorials and best practices
