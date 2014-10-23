@@ -1,7 +1,7 @@
 
 ![ngeurope](https://www.dropbox.com/s/do6pb6bw7zp66mk/ng-europe-horizontal-on-black.png?dl=1)
 
-Notes of [ng-europe 2014](http://ngeurope.org/) by [@rene_ras](http://twitter.com/rene_ras), [@jhkuperus](http://twitter.com/jhkuperus)  
+Notes of [ng-europe 2014](http://ngeurope.org/) by [@rene_ras](http://twitter.com/rene_ras), [@jhkuperus](http://twitter.com/jhkuperus), [@di4zz](http://twitter.com/di4zz)  
 Create an issue or PR if you also contributed to these notes.
 
 #Day 1

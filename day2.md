@@ -276,7 +276,7 @@ Focus more on __"is this good software?"__
 
 
 ## 12. Dave Smith - The Power of $q
-@djsmith42 [Slides](http://slides.com/djsmith/the-power-of-angular-q/#/)
+@djsmith42 [slides](http://slides.com/djsmith/the-power-of-angular-q/#/)
 
 > Prevent Problems and upscale your apps with $q
 
@@ -307,3 +307,46 @@ __Handle identity management__
 
 __Demo time__  
 The [code](https://github.com/auth0/angularjs-jwt-authentication-tutorial) is a step-by-step tutorial seperated by branch
+
+## 14. Ari Lerner - Building games with AngularJS
+@auser [slides](http://ari.ngrok.com)  
+Code at https://github.com/fullstackio/ng-game
+
+Why build a game with Angular ?
+- Games are often more than a canvas
+- Webapps are great at powering these
+
+Showing interesting use of:
+- [Browserify](http://browserify.org/) to package and load module with CommonJS syntax (like nodejs require ...)
+- $injector to dynamically / imperative load services without declaring explicit dependency
+- hook of $destroy event to correctly free object (cleanup game manager)
+- ioLoader module to wrap and handle socket.io for runtime comunication with backend (keep gamers in sync)
+
+## 15. Brian Ford - Tooling
+@briantford [slides](https://docs.google.com/presentation/d/16RJPOvWMePMTkvDrugOakV9uyGFRMd3PZ3g5UofhfIY/edit#slide=id.p)
+
+> Sometimes you have no clue as a developer why nothing or a certain thing happened
+
+Try picking out a typo `ng-clock` in several lines of code!
+
+>Can we do better ? Should we do more static validation or even runtime validation ?
+
+> Yes we should.
+
+__Solution: [ngHint](https://github.com/angular/angular-hint)__  
+Runtime hinting for Angular. Suggests and hints on improvements in your code.
+- typo’s `Found ng-clock. did you mean ng-click?`
+- unused modules
+- deprecated API’s
+- naming conventions
+- great improvement for CI
+
+### Further news
+
+__New Batarang__
+- More simplified
+- ngHint integration
+
+__Roadmap, personal wishes__
+- Performance hints
+- Hints for when upgrading for example from 1.2 to 1.3
