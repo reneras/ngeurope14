@@ -128,8 +128,14 @@ When you have several apps which depend on each other, sometimes we tend to comm
 ## 6. Julien Bouquillon - Using AngularJS and Phonegap to build hybrid mobile applications
 
 - Dicusses [Cordova](http://cordova.apache.org/) architecture, the OpenSource part of Phonegap.
+- The web platform is the only one that can adress the multiples devices/OS with a single codebase
 - Mentions http://ngcordova.com/, will demonstrate that using the [Contacts API](http://ngcordova.com/docs/#Contacts).
 - Showing how to load certain angular modules only when on Desktop or Mobile for example using a simple condition (!window.cordova)
+- Example code of mocking cordova calls for desktop browsers or unit test
+
+Slides : http://revolunet.github.io/ngeurope-angular-cordova
+
+Demo : http://revolunet.github.io/angular-ngcordova-demo
 
 [Demo time]
 
