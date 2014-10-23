@@ -12,4 +12,4 @@ Link: https://github.com/reneras/ngeurope14/blob/master/day1.md
 
 #Day 2
 
-Will follow
+Link: https://github.com/reneras/ngeurope14/blob/master/day2.md
