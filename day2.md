@@ -87,6 +87,7 @@ Bind to a css selector to a function for run-time/imperative transformation of c
 More info on [Famous Angular](https://github.com/Famous/famous-angular)
 
 ## 4. Douglas Duteil - Yet another way to animate in Angular
+@douglasduteil [slides](https://docs.google.com/presentation/d/1W-0qR2LDmdeAv_3uGC1w6HyB-8Zc6ANwx1WM5wJrsx0/edit?usp=sharing)
 
 Takes us back to Angular 1.1.5 were he met ngAnimate
 But that was cumbersome
@@ -350,3 +351,25 @@ __New Batarang__
 __Roadmap, personal wishes__
 - Performance hints
 - Hints for when upgrading for example from 1.2 to 1.3
+
+## Q & A – answers
+- Brad Green: Angular 1.3 support for 1,5 - 2 years after Angular 2.0 release
+- AngularDart will use ShadowDom
+- IE8 support is only in 1.2.x
+- Angular 2.x will only support evergreen browsers
+- new Angular Router will be back ported to 1.3 just as a module
+- Actually no migrate path from 1.x to 2.0 Igor: "write best code"
+  - maybe start using Traceur to handle ES6 module and class syntax (they use it internally)
+  - follow AngularJS 2.0 meetings note to keep in touch with news / demo / future direction etc...
+- They choose Traceur and not Typescript for easily "hook" on it to generate Dart and JS code from the same source code and for ES6 syntax support
+- End of the year WebMaster Tools announced that they will crawler and execute javascript so NO MORE need to pre-render serveside page/code for SEO Angular Site
+- Even startup time will improve in Angular so no more need to "pre-compute" data serverside or other
+- In AngularJS 2.0 there will be NO $apply because they will use Zone.js
+- Dirty Checking vs Object.Observe   angular will continue using dirty check because right now the benchmark gives better results (12.000 check / sec), but this will be pluggable and may change in future...
+- Migration guide from 1.2 to 1.3  on angular docs site
+- Lazy loading in Angular 2.x will use ES6 module system
+- package manager (npm , bower) there will be some guide to use it in 2.0
+- ngAria and Material design currently has some perf problem and not complete
+- maybe in future Protactor will have some test for check Accessibility done right
+- plan to port Material Design logic (not directive) in other project like Ionic to share/handle common logic/infrastructure and choose different UX implementation
+- Material design is currently in live change (based on users feed) and the angular implementation will keep in touch with this change and will provide us a library for that "Widget UX"
