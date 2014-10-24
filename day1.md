@@ -269,29 +269,52 @@ Code can be found here: https://github.com/Swiip/angular-from-scratch
 
 ## 13. Oliver Dore - Responsive Takes Flight: Building The First Responsive Airline Website
 
-Oliver helped developing http://virginamerica.com
-Shows their website before the redesign. Cumbersome.
+Oliver is a developer at [Work & Co](http://work.co/), and lead the front-end architecture of a responsive redesign for [virginamerica.com](http://www.virginamerica.com/).
 
-__Business goals__
-- Increase conversion
-- Responsive
-- Brand: Better online presence
+Demonstrated old site, UX issues and two codebases (for desktop and mobile). Explained that Virgin America is a unique airline that deserves a unique presence on the Web.
 
-> We developed this very agile by having a living prototype as leading between different disciplines.
-> Call it the bible instead of sharing sketches, photoshop files etc.
+**Main goals of the project**
 
-__Why Angular ?__
-- Mainly the need for a quick and robust way to prototype and build a stateless webapp
-> We found that Angular was opinionated and flexible enough at places where it mattered.
+* Increase conversion
+* Create a responsive, consistent experience across all devices
+* Create a site that better represents Virgin's brand
 
-__App architecture__
-- One module per flow
-- One big module with dependencies to flows
-- Components styled with help of BEM & SMACS
+> The prototype was the single source of truth, the bible - it wasn't meeting notes, sketches or PSDS. The prototype was the shared vision of what the product should be.
 
-In order to overcome the different watches on e.g. window scroll across the whole app,
-they created a windowService to prevent code repitition and follow seperation of concerns
+**Approach to Responsive Design**
 
-__Mo $watch, mo problems__ – Because the lack of bindonce availabality in angular by that time. So they used an open source version.
+Often, a discussion around Mobile First or Desktop First? Not on this project. 
 
-> We will include ngAria in the near future!
+> Aims of consistent UI and interaction patterns lead us to adopting an **Everything First** approach.
+
+**UI Architecture**
+
+* BEM (Block, Element, Modifier) for class conventions, to promote re-usability
+* Showed example of BEM in action
+* SMACSS (Scalable and Modular Architecture for CSS) for structuring SASS partials
+
+**Responsive Components**
+
+* The ability to render different markup from a single source of data
+* Other examples include main navigation, fare selector and travel summary bar
+* windowService to centralize window and app global UI events
+* Performance bottlenecks when firing watchers on scroll and resize events and how digest cycle was circumvented
+
+**Forms**
+
+* Series of directives to make building forms easier
+* Aggregation of validation into formHandler
+* Use of models to define schemas, mappings and (de)serialization methods to reduce tight coupling between API and UI
+
+**Responsive Images**
+
+* Grunticon for SVG icons and background images
+* Responsive image directive to define breakpoint-specific sizes
+* Modernizr to determine variable pixel densities and convert size attributes
+* Built in conjunction with Akamai image resize API
+
+**Mo $watch(), mo Problems**
+
+* Views with hundreds of bindings - used bindonce to reduce number of watchers
+* Memory issues, Chrome DevTools memory profiler, reducing memory usage, spikes and detached DOM nodes
+* Accessibility, or lack thereof - planning for improvements, including incorporating ngAria module as part of upgrade to Angular 1.3.
