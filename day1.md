@@ -271,6 +271,12 @@ Code can be found here: https://github.com/Swiip/angular-from-scratch
 
 Oliver is a developer at [Work & Co](http://work.co/), and lead the front-end architecture of a responsive redesign for [virginamerica.com](http://www.virginamerica.com/).
 
+---
+
+Slideshare deck of session: [ngEurope 2014 | Responsive Takes Flight](http://www.slideshare.net/workandco/vx-ng-europe)
+
+---
+
 Demonstrated old site, UX issues and two codebases (for desktop and mobile). Explained that Virgin America is a unique airline that deserves a unique presence on the Web.
 
 **Main goals of the project**
