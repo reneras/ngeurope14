@@ -283,15 +283,14 @@ Demonstrated old site, UX issues and two codebases (for desktop and mobile). Exp
 
 **Approach to Responsive Design**
 
-Often, a discussion around Mobile First or Desktop First? Not on this project. 
+Often, a discussion around "Mobile First" or "Desktop First"? Not on this project. 
 
 > Aims of consistent UI and interaction patterns lead us to adopting an **Everything First** approach.
 
 **UI Architecture**
 
-* BEM (Block, Element, Modifier) for class conventions, to promote re-usability
-* Showed example of BEM in action
-* SMACSS (Scalable and Modular Architecture for CSS) for structuring SASS partials
+* [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) (Block, Element, Modifier) for class conventions, to promote re-usability
+* [SMACSS](https://smacss.com/) (Scalable and Modular Architecture for CSS) for structuring [SASS](http://sass-lang.com/) partials
 
 **Responsive Components**
 
@@ -304,17 +303,17 @@ Often, a discussion around Mobile First or Desktop First? Not on this project.
 
 * Series of directives to make building forms easier
 * Aggregation of validation into formHandler
-* Use of models to define schemas, mappings and (de)serialization methods to reduce tight coupling between API and UI
+* Use of models to define schemas, mappings and (de)serialization methods to reduce coupling between API and UI
 
 **Responsive Images**
 
 * Grunticon for SVG icons and background images
 * Responsive image directive to define breakpoint-specific sizes
 * Modernizr to determine variable pixel densities and convert size attributes
-* Built in conjunction with Akamai image resize API
+* Built in conjunction with [Akamai image resize service](http://www.slideshare.net/AkamaiTechnologies/akamai-whitepaper-frontendoptimization)
 
-**Mo $watch(), mo Problems**
+**Mo $watch(), Mo Problems**
 
-* Views with hundreds of bindings - used bindonce to reduce number of watchers
-* Memory issues, Chrome DevTools memory profiler, reducing memory usage, spikes and detached DOM nodes
-* Accessibility, or lack thereof - planning for improvements, including incorporating ngAria module as part of upgrade to Angular 1.3.
+* Views with hundreds of bindings - used Pasquale Vazzana's [bindonce directive](https://github.com/Pasvaz/bindonce) to reduce number of watchers
+* Memory issues, investigating with Chrome DevTools memory profiler, reducing memory usage, spikes and detached DOM nodes
+* Accessibility issues - planning for improvements, including incorporating ngAria module as part of upgrade to Angular 1.3.
