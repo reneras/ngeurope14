@@ -329,3 +329,17 @@ Often, a discussion around "Mobile First" or "Desktop First"? Not on this projec
 * Views with hundreds of bindings - used Pasquale Vazzana's [bindonce directive](https://github.com/Pasvaz/bindonce) to reduce number of watchers
 * Memory issues, investigating with Chrome DevTools memory profiler, reducing memory usage, spikes and detached DOM nodes
 * Accessibility issues - planning for improvements, including incorporating ngAria module as part of upgrade to Angular 1.3.
+
+## 14. Lightning talks contest
+
+* [angular-wakanda](http://www.wakanda.org/angular-wakanda/) by Wakanda
+* [AngularStrap](http://mgcrea.github.io/angular-strap/) by Olivier Louvignes
+* Angular + React = Speed by Dave Smith
+* No Backend Workflow With ngMockE2E and Gulp by Gabriel Obregon ([Slides](https://docs.google.com/presentation/d/1_rQYLgXSWjwTb3EIox-sz8gzPJPVsmhnEljVkTpCi3c/edit#slide=id.g3e45392d6_05))
+* [Paginate](https://github.com/michaelbromley/angularUtils/tree/master/src/directives/pagination) anything in AngularJS by Michael Bromley
+* Committing: do it right. by Andrew Joslin
+* Internationalize AngularJS by Rahul Doshi ([Slides](http://doshprompt.github.io/angular-localization-lightning-talk/#/))
+* RRM, the JS Object Relational Mapper by Bart van den Burg
+* [ngImprovedTesting](https://github.com/evangalen/ng-improved-testing): mock testing for AngularJS made easy by Emil van Galen ([Slides](http://slides.com/emilvangalen/ngeurope-ngimprovedtesting/#/))
+* ngFactory: the Angular component development environment by Douglas Duteil, Julien Bouquillon and Olivier Louvignes 
+* [AngularJS Jump in!](http://angularjs.jumpin.info/#/) by Manuel Bruschi
