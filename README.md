@@ -6,6 +6,8 @@ Are you one of the speakers? Would like to rephrase something? Create an issue o
 
 #Day 1
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/reneras/ngeurope14?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 Link: https://github.com/reneras/ngeurope14/blob/master/day1.md
 
